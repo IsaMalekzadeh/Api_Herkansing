@@ -1,4 +1,5 @@
-const baseUrl = "http://127.0.0.1:8000";
+const baseUrl = "/api";
+
 
 // Fetch all teams
 document.getElementById('getTeams').addEventListener('click', () => {

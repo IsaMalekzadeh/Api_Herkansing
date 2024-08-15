@@ -1,9 +1,9 @@
 # Sport Team Management API
 
- Welkom bij mijn Sport Team Management API! Dit project biedt een backend- en frontendoplossing voor het beheren van sportteams en gebruikers. De applicatie is gebouwd met FastAPI voor de backend en een eenvoudige HTML/CSS/JavaScript frontend, en stelt gebruikers in staat om CRUD-bewerkingen (maken, lezen, bijwerken en verwijderen) uit te voeren op sportteams en gebruikers.
+Welkom bij mijn Sport Team Management API! Dit project biedt een backend- en frontendoplossing voor het beheren van sportteams en gebruikers. De applicatie is gebouwd met FastAPI voor de backend en een eenvoudige HTML/CSS/JavaScript frontend, en stelt gebruikers in staat om CRUD-bewerkingen (maken, lezen, bijwerken en verwijderen) uit te voeren op sportteams en gebruikers.
 Projectoverzicht
 
-De Sport Team Management API is ontworpen om gebruikers te helpen bij het effectief beheren van sportteams. De applicatie biedt functies voor het aanmaken, lezen, bijwerken en verwijderen van teams en gebruikers. Bovendien biedt de API-eindpunten voor gebruikersauthenticatie, waardoor een veilige toegang tot het systeem wordt gegarandeerd.
+De Sport Team Management API is ontworpen om gebruikers te helpen bij het effectief beheren van sportteams. De applicatie biedt functies voor het aanmaken, lezen, bijwerken en verwijderen van teams en gebruikers. Bovendien biedt de API eindpunten voor gebruikersauthenticatie, waardoor een veilige toegang tot het systeem wordt gegarandeerd.
 Belangrijkste Kenmerken
 
 Gebruikersbeheer: Maak nieuwe gebruikers aan, bekijk gebruikersdetails en verifieer gebruikers met JWT-tokens.
@@ -13,11 +13,21 @@ Frontend-interface: Een gebruiksvriendelijke webinterface gebouwd met HTML, CSS 
 ## Technologie Stack
 
 Backend: FastAPI, SQLAlchemy, SQLite
-Frontend: HTML, CSS, JavaScript
-Containerisatie: Docker
 
-### Aan de Slag
-Volg de onderstaande stappen om aan de slag te gaan met dit project:
+Frontend: HTML, CSS, JavaScript
+
+Containerisatie: Docker
+Webserver: Nginx
+
+ 
+
+## Containerisatie en Hosting
+
+Zowel de frontend als de backend zijn gecontaineriseerd met Docker om een consistente en draagbare omgeving te bieden. De backend draait in een container met FastAPI, terwijl de frontend wordt gehost in een aparte container met behulp van Nginx. Nginx fungeert als de webserver voor de frontend en zorgt ervoor dat de bestanden efficiënt worden geserveerd.
+
+### Pytest
+Tenslotte heb ik gebruik gemaakt van de pytest library voor alle GET en niet-GET endpoints te testen
+
 
 ## POST (User aanmaken)
 Hiervoor gebruik je de POST endpoint /users voor. In het voorbeeld gebruik ik mijn eigen naamn (Isa Malekzadeh)
@@ -34,7 +44,7 @@ maar als ik een token aanvraag kan ik wel geauthenticeerd worden.
 ![img_13.png](img_13.png)
 
 
-## POST (Het maken van een team.)
+## POST (Het maken van een team)
 Hiervoor gebruik je de POST enpoint /teams.
 Het team dat gemaakt is heet "Redstrike" in de stad "Hasselt"
 ![img.png](img.png)
@@ -75,7 +85,7 @@ Als je nu een GET request doet voor alle teams zul je "Red Strike" niet terug ku
 
 
 # DEMO FRONTEND
-## https://youtu.be/GE0HXDvX-jw
+## https://youtu.be/uSR6PqjmW7s
 
 ## Pytest
 ![img_14.png](img_14.png)
