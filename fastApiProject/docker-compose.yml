@@ -1,14 +1,11 @@
-version: "3.9"
+version: '3.8'
+
 services:
- system-service:
-  build:
-   context: "."
-   dockerfile: Dockerfile-app
-  ports:
-    - "8111:8000"
-  volumes:
-    - ./app/test.db:/code/test.db
-
-volumes:
-  sqlite_useritems_volume:
-
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - ENV=development
+    volumes:
+      - .:/app
