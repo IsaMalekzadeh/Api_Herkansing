@@ -2,6 +2,9 @@ from fastapi import FastAPI, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from . import crud, models, schemas, auth
 from .database import engine, SessionLocal
+from fastapi.staticfiles import StaticFiles
+
+
 
 models.Base.metadata.create_all(bind=engine)
 
@@ -14,6 +17,8 @@ def get_db():
     finally:
         db.close()
 
+
+app.mount("/static", StaticFiles(directory="static"), name="static")
 @app.get("/")
 def read_root():
     return {"message": "Welcome to the Sport Team Management API"}

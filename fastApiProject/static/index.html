@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Team Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sport Team Management</h1>
+
+        <div class="section">
+            <button id="getTeams">Get All Teams</button>
+            <ul id="teamList"></ul>
+        </div>
+
+        <div class="section">
+            <h2>Get Team by ID</h2>
+            <input type="number" id="teamId" placeholder="Enter team ID">
+            <button id="getTeamById">Get Team</button>
+            <p id="teamDetail"></p>
+        </div>
+
+        <div class="section">
+            <h2>Create a New Team</h2>
+            <input type="text" id="teamName" placeholder="Team name">
+            <input type="text" id="teamCity" placeholder="Team city">
+            <button id="createTeam">Create Team</button>
+            <p id="createResponse"></p>
+        </div>
+
+        <div class="section">
+            <h2>Get Teams by City</h2>
+            <input type="text" id="cityName" placeholder="Enter city name">
+            <button id="getTeamsByCity">Get Teams</button>
+            <ul id="cityTeamList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
