@@ -7,9 +7,9 @@ from sqlalchemy.orm import Session
 from . import schemas, models, crud
 from .database import SessionLocal
 
-SECRET_KEY = "your-secret-key"
+SECRET_KEY = "r0938844"
 ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES = 30
+ACCESS_TOKEN_EXPIRE_MINUTES = 5
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
