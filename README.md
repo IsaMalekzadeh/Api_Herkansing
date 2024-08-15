@@ -19,6 +19,20 @@ Containerisatie: Docker
 ### Aan de Slag
 Volg de onderstaande stappen om aan de slag te gaan met dit project:
 
+## POST (User aanmaken)
+Hiervoor gebruik je de POST endpoint /users voor. In het voorbeeld gebruik ik mijn eigen naamn (Isa Malekzadeh)
+![img_9.png](img_9.png)
+
+### momenteel ben ik nog niet geauthenticeerd.
+Dit kan ik zien als ik de GET endpoint /users/me gebruik.
+![img_10.png](img_10.png)
+
+## POST (Token maken)
+maar als ik een token aanvraag kan ik wel geauthenticeerd worden.
+![img_11.png](img_11.png)
+![img_12.png](img_12.png)
+![img_13.png](img_13.png)
+
 
 ## POST (Het maken van een team.)
 Hiervoor gebruik je de POST enpoint /teams.
@@ -59,16 +73,9 @@ verwijderen.
 Als je nu een GET request doet voor alle teams zul je "Red Strike" niet terug kunnen vinden.
 ![img_8.png](img_8.png)
 
-## POST (User aanmaken)
-Hiervoor gebruik je de POST endpoint /users voor. In het voorbeeld gebruik ik mijn eigen naamn (Isa Malekzadeh)
-![img_9.png](img_9.png)
 
-### momenteel ben ik nog niet geauthenticeerd.
-Dit kan ik zien als ik de GET endpoint /users/me gebruik.
-![img_10.png](img_10.png)
+# DEMO FRONTEND
+## https://youtu.be/GE0HXDvX-jw
 
-## POST (Token maken)
-maar als ik een token aanvraag kan ik wel geauthenticeerd worden.
-![img_11.png](img_11.png)
-![img_12.png](img_12.png)
-![img_13.png](img_13.png)
+## Pytest
+![img_14.png](img_14.png)
