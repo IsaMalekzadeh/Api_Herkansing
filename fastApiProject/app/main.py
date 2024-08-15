@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from . import crud, models, schemas, auth
 from .database import engine, SessionLocal
 from fastapi.staticfiles import StaticFiles
-
+from fastapi.middleware.cors import CORSMiddleware
 
 
 models.Base.metadata.create_all(bind=engine)
@@ -19,6 +19,13 @@ def get_db():
 
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 @app.get("/")
 def read_root():
     return {"message": "Welcome to the Sport Team Management API"}
